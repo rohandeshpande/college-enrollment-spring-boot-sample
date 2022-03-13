@@ -1,0 +1,11 @@
+package com.hogwarts.enrollment.dao.repository;
+
+public interface NativeSQL {
+    String DISABLE_FOREIGN_KEY_CHECKS = "SET FOREIGN_KEY_CHECKS=0";
+    String TRUNCATE_TABLE_STUDENT_SECTION = "TRUNCATE TABLE StudentSection";
+    String TRUNCATE_TABLE_SECTION = "TRUNCATE TABLE Section";
+    String TRUNCATE_TABLE_COURSE = "TRUNCATE TABLE Course";
+    String TRUNCATE_TABLE_USER = "TRUNCATE TABLE User";
+    String TRUNCATE_TABLE_ROLE_META = "TRUNCATE TABLE RoleMeta";
+    String ENABLE_FOREIGN_KEY_CHECKS = "SET FOREIGN_KEY_CHECKS=1";
+}
